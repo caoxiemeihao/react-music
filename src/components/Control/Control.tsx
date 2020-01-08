@@ -2,7 +2,7 @@ import React from 'react';
 
 import Icon from '../Icon/Icon';
 import { iconPaths } from '../../common/iconPaths';
-import './Control.scss';
+import './Control.styl';
 
 interface IControlProps {
   type?: keyof iconPaths;

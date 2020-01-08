@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Title.scss';
+import './Title.styl';
 
 interface ITitleProps {
   name?: string;

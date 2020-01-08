@@ -6,7 +6,7 @@ import Picture from './components/Picture/Picture';
 import Progress from './components/Progress/Progress';
 import useAudio from './common/useAudio';
 import { ISong } from './common/types';
-import './Player.scss';
+import './Player.styl';
 
 interface IPlayerProps {
 	playList: ISong[];

@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 import Player from './Player';
 import { songs } from './common/songs';
-import './index.scss';
+import './index.styl';
 
 ReactDOM.render(<Player playList={songs} />, document.getElementById('root'));

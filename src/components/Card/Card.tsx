@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './Card.scss';
+import './Card.styl';
 
 interface ICardProps {
   className?: string;

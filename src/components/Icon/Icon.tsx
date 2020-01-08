@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { iconPaths } from '../../common/iconPaths';
-import './Icon.scss';
+import './Icon.styl';
 
 type MaybeElement = JSX.Element | false | null | undefined;
 type IconName = 'play' | 'pause' | 'next' | 'previous';

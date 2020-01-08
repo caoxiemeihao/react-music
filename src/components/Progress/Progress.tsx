@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Progress.scss';
+import './Progress.styl';
 
 type ProgressProps = {
   percent?: number;

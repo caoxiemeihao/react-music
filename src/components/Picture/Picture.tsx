@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './Picture.scss';
+import './Picture.styl';
 
 interface IPictureProps {
   isPlay?: boolean;
