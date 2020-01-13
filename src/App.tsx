@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
+import Player from "@src/Player";
+import { songs } from "@src/common/songs";
 
-function App() {
-  return <div>Player</div>;
-}
+import "./App.styl";
 
-export default App;
+ReactDOM.render(<Player playList={songs} />, document.getElementById("root"));

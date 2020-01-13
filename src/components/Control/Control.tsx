@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Icon from '../Icon/Icon';
-import { iconPaths } from '../../common/iconPaths';
-import './Control.styl';
+import Icon from "../Icon/Icon";
+import { iconPaths } from "../../common/iconPaths";
+import "./Control.styl";
 
 interface IControlProps {
   type?: keyof iconPaths;
-  size?: 'large' | 'small';
+  size?: "large" | "small";
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
@@ -14,11 +14,11 @@ const SIZE_LARGE = 60;
 const SIZE_SMALL = 40;
 
 function Control({
-  type = 'play',
-  size = 'large',
+  type = "play",
+  size = "large",
   onClick = () => {}
 }: IControlProps) {
-  const btnSize = size === 'large' ? SIZE_LARGE : SIZE_SMALL;
+  const btnSize = size === "large" ? SIZE_LARGE : SIZE_SMALL;
 
   return (
     <button className="player-control-btn" onClick={onClick}>
