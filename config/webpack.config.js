@@ -37,8 +37,8 @@ const useTypeScript = fs.existsSync(paths.appTsConfig);
 // style files regexes
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
-const sassRegex = /\.(scss|sass)$/;
-const sassModuleRegex = /\.module\.(scss|sass)$/;
+// const sassRegex = /\.(scss|sass)$/;
+// const sassModuleRegex = /\.module\.(scss|sass)$/;
 // --------- stylus-Regexp ---------s
 const stylusRegex = /\.styl$/;
 const stylusModuleRegex = /\.module\.styl$/;
@@ -269,6 +269,8 @@ module.exports = function (webpackEnv) {
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
+        '@src': path.resolve(__dirname, '../src'),
+        '@root': path.resolve(__dirname, '../'),
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
@@ -452,6 +454,7 @@ module.exports = function (webpackEnv) {
             // --------- stylus-loader ---------s
             {
               test: stylusRegex,
+              exclude: stylusModuleRegex,
               use: getStyleLoaders(
                 {
                   importLoaders: 2,
